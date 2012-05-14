@@ -1,0 +1,3 @@
+== nicholasjohnmercer.com
+
+Code for my homepage/resume. Written in ruby/rails with the help of bootstrap.
