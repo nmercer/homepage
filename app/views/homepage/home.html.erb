@@ -9,54 +9,11 @@
     
   </head>
   <body>
-    <header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="#">Nicholas Mercer</a>
-          <ul class="nav pull-right">
-            <li class="divider-vertical"></li>
-            <li><%= link_to image_tag("fb.png", :size => "20x20"), "http://facebook.com/nicholasjohnmercer" %></li>
-            <li class="divider-vertical"></li>
-            <li><%= link_to image_tag("linkedin.png", :size => "20x20"), "http://www.linkedin.com/pub/nicholas-mercer/29/229/812" %></li>
-            <li class="divider-vertical"></li>
-            <li><%= link_to image_tag("github.png", :size => "20x20"), "https://github.com/nmercer" %></li>
-            <li class="divider-vertical"></li>
-
-          </ul>
-        </div>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     <div class="container">
-          <div class=span12>
-            <form class="well">
-              <label><h1>Resume</h1></label>
-                <div class="line"></div>
-                  <div class="tabbable">
-
-                    <ul class="nav nav-pills">
-                      <li class="active"><a href="#tab1" data-toggle="pill">Personal Profile</a></li>
-                      <li><a href="#tab2" data-toggle="pill">Education</a></li>
-                      <li><a href="#tab3" data-toggle="pill">Professional Experience</a></li>
-                      <li><a href="#tab4" data-toggle="pill">Technical Skills</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                      <div class="tab-pane active" id="tab1">
-                        <%= render 'layouts/profile' %>
-                      </div>
-                      <div class="tab-pane" id="tab2">
-                        <%= render 'layouts/edu' %>
-                      </div>
-                      <div class="tab-pane" id="tab3">
-                        <%= render 'layouts/proff' %>
-                      </div>
-                      <div class="tab-pane" id="tab4">
-                        <%= render 'layouts/tech' %>
-                      </div>
-                    </div>
-
-                </div>
-              </table>
-            </form>
+      <div class=span12>
+        <form class="well">
+          <%= render 'layouts/body' %>
+        </form>
   </body>
 </html>
