@@ -1,9 +1,5 @@
 <html>
   <head>
-    <title>Nicholas Mercer</title>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
     <%= yield 'layouts/bootstrap-tabs.js' %>
     <%= yield 'layouts/bootstrap-dropdown.js.js' %>
     
@@ -15,5 +11,7 @@
         <form class="well">
           <%= render 'layouts/body' %>
         </form>
+      </div>
+    </div>
   </body>
 </html>

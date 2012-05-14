@@ -1,15 +1,40 @@
 <table class="table table-bordered" id="bordered">
   <tr>
     <td>
-      <div class="row">
-        <center><h1>Nicholas Mercer<h1></center>
-        <center><h3>Syracuse, NY</h3></center>
-      </div>
+      <%= render 'layouts/resume_header' %>
+
+      <h3>
+        Navisite, Software Engineer R&D, 2011-Present 
+      </h3>
+      <ul>
+        <li>Frontend and backend work in a custom built Python web framework built around Javascript/Jquery, XML, CSS/SASS, Apache, nginx and Postgres.</li>
+        <li>Integrated NetApp.s enterprise storage system as a multi tenant self service product into Navisites online enterprise hosting service from frontend to backend.</li>
+        <li>Major roles: Backend Development, NetApp Implementation, Database Design, Bugs.</li>
+        <li>Minor roles: Frontend Development, Testing.</li>
+      </ul>
+
+      <h3>WVT Communications, NOC Technician, 2009-2011</h3>
+      <ul>
+        <li>Installed, configured and maintain trouble ticketing system.  (OTRS)</li>
+        <li>Write and maintain scripts to speed up functions of the NOC.</li>
+        <li>Manage and support the tickets for wholesale and hosted customers.  Includes answering service calls, and contacting customers.</li>
+      </ul>
+
+      <h3>USA Datanet, Junior Network Operations Center Technician, 2008</h3>
+      <ul>
+        <li>Monitored wholesale telephony traffic.  Including troubleshooting issues that our providers reported and working with underlying carriers to solve issues.</li>
+        <li>Small script writing tasks for in-house programmer.</li>
+      </ul>
+
       <div class="line"></div>
 
-      <ul>
-        <li>Currently working as a Software Engineer at Naviste in the R&D department on the enterprise hosting project.</li>
-        <li>Completed undergraduate degree at the State University of New York Institute of Technology with a major in computer science, and a minor in mathematics while working full and part-time as a network operations technician as an intern and as an employee.</li>
+      <center>
+        <%= link_to image_tag("navi.png", :size => "206x1000"), "http://www.navisite.com/" %>
+        <%= link_to image_tag("wvt.png", :size => "206x70"), "http://www.warwick.net/" %>
+        <%= link_to image_tag("usad.png", :size => "120x1000"), "http://www.usadatanet.com/" %>
+      </center>
+
+
     </td>
   </tr>
 </table>
