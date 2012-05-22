@@ -1,3 +1,3 @@
 == nicholasmercer.net
 
-Code for my homepage/resume. Written in ruby/rails with the help of bootstrap.
+Code for my homepage/resume. Written in ruby/rails with the help of bootstrap. Currently hosted on http://nicholasmercer.herokuapp.com/
