@@ -2,6 +2,17 @@
 
 /* universal */
 
+/* header */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.8em;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -9,6 +20,22 @@ html {
 body {
   padding-top: 60px;
   background-color: #D8D8D8;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.name {
+  font-size: 100px;
 }
 
 .line {
@@ -28,5 +55,4 @@ body {
 }
 
 li {
-  font-weight:bold;
 }
