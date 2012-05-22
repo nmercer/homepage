@@ -5,8 +5,13 @@ gem 'bootstrap-sass', '2.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :production do
+  gem 'pg'
+end
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 gem 'thin'
 
 
